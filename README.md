@@ -6,11 +6,12 @@ This repository contains the code of our simulations for the CSCI-635 project ab
 First clone this repository :
 
 ```sh
-git clone ...
+git clone https://github.com/xdauby/Faster-R-CNN
 ```
 
 The cloned repository tree is :
 
+```sh
 .
 ├── FPN_test_output.txt
 ├── R101_test_output.txt
@@ -21,7 +22,7 @@ The cloned repository tree is :
 ├── main_test_coco.py
 ├── main_train_coco.py
 └── model.py
-
+```
 
 Then, install detectron2 using the command (You must be in the root of the cloned folder) : 
 
@@ -53,6 +54,7 @@ Make sure that instances_val2017.json and instances_train2017.json are in /datas
 
 You're final tree must be :
 
+```sh
 .
 ├── FPN_test_output.txt
 ├── R101_test_output.txt
@@ -68,6 +70,7 @@ You're final tree must be :
 ├── main_test_coco.py
 ├── main_train_coco.py
 └── model.py
+```
 
 Setting up all this stuff is quite long. This is why ** all the results of our executions are stored in the following txt files** :
 
