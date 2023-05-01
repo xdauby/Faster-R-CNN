@@ -46,6 +46,10 @@ class Model:
       self.cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(model)
 
   #Model trainning
+  #be careful : one epoch = number_image / batchsize iterations
+  #Conseqently, one epoch is equivalent to approx. 29 000 iterations.
+  #This conduct to 12 hours of traning for one epoch
+  #This is why we use  pretrained weights, but we show that we are able to train the model.
   def train_model(self, train_set, batchsize = 128, lr = 0.00025, iteration = 200):
 
     self.cfg.DATASETS.TRAIN = (train_set,)
