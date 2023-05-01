@@ -16,6 +16,7 @@ The cloned repository tree is :
 ├── FPN_test_output.txt
 ├── R101_test_output.txt
 ├── R50_test_output.txt
+├── R50_proof_of_train.txt
 ├── README.md
 ├── datasets
 │   └── coco
@@ -27,6 +28,7 @@ The cloned repository tree is :
 Then, install detectron2 using the command (You must be in the root of the cloned folder) : 
 
 ```sh
+git clone https://github.com/facebookresearch/detectron2.git
 python3 -m pip install -e detectron2
 ```
 Sometimes, you will need to download manually packages that will not be automically installed by detectron2. Please, install those packages.
