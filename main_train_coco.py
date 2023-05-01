@@ -10,9 +10,8 @@ args = parser.parse_args()
 
 models = args.models
 
-#Load datasert
+#Load dataset
 register_coco_instances('coco_train_2017', {}, 'datasets/coco/annotations/instances_train2017.json', 'datasets/coco/train2017')
-register_coco_instances('coco_val_2017', {}, 'datasets/coco/annotations/instances_val2017.json', 'datasets/coco/val2017')
 
 if models == 'R50':
 
@@ -36,7 +35,7 @@ if models == 'R50':
     model_backbone_R_50_C4_3x.config_model(backbone_R_50_C4_3x, bool_pre_trained_weights = False)
     model_backbone_R_50_DC5_3x.config_model(backbone_R_50_DC5_3x, bool_pre_trained_weights = False)
 
-    #Train and Inferences
+    #Train
     model_backbone_R_50_C4_1x.train_model('coco_train_2017')
     model_backbone_R_50_DC5_1x.train_model('coco_train_2017')
     model_backbone_R_50_C4_3x.train_model('coco_train_2017')
@@ -59,7 +58,7 @@ elif models == 'R101':
     model_backbone_R_101_C4_3x.config_model(backbone_R_101_C4_3x, bool_pre_trained_weights = False)
     model_backbone_R_101_DC5_3x.config_model(backbone_R_101_DC5_3x, bool_pre_trained_weights = False)
 
-    #Train and Inferences
+    #Train
     model_backbone_R_101_C4_3x.train_model('coco_train_2017')
     model_backbone_R_101_DC5_3x.train_model('coco_train_2017')
     
@@ -83,7 +82,7 @@ elif models == 'FPN':
     model_backbone_R_50_FPN_3x.config_model(backbone_R_50_FPN_3x, bool_pre_trained_weights = False)
     model_backbone_R_101_FPN_3x.config_model(backbone_R_101_FPN_3x, bool_pre_trained_weights = False)
 
-    #Train anInferences
+    #Train
     model_backbone_R_50_FPN_1x.train_model('coco_train_2017')
     model_backbone_R_50_FPN_3x.train_model('coco_train_2017')
     model_backbone_R_101_FPN_3x.train_model('coco_train_2017')
@@ -91,7 +90,7 @@ elif models == 'FPN':
 else:
 
     print('Invalid argument : models are "R50", "R101", "FPN".')
-    print("Please use : python3 main_test_coco.py -m [model name]")
+    print("Please use : python3 main_train_coco.py -m [model name]")
     print("By default, R50 is used.")
 
 
