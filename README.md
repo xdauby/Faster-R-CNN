@@ -7,7 +7,7 @@ This code have been run in weasley nodeclient. To connect to this node enter thi
 
 ```sh
 ssh [your id]@weasley.cs.rit.edu
-```sh
+```
 
 Then, clone this repository :
 
