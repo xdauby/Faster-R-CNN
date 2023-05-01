@@ -6,7 +6,7 @@ This repository contains the code of our simulations for the CSCI-635 project ab
 This code have been run in weasley nodeclient. To connect to this node enter this command line and then your password :
 
 ```sh
-  ssh [your id]@weasley.cs.rit.edu
+ssh [your id]@weasley.cs.rit.edu
 ```
 
 
