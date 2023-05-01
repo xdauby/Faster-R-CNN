@@ -61,6 +61,7 @@ You're final tree must be :
 ├── FPN_test_output.txt
 ├── R101_test_output.txt
 ├── R50_test_output.txt
+├── R50_proof_of_train.txt
 ├── README.md
 ├── datasets
 │   └── coco
@@ -74,7 +75,7 @@ You're final tree must be :
 └── model.py
 ```
 
-Setting up all this stuff is quite long. This is why ** all the results of our executions are stored in the following txt files** :
+Setting up all this stuff is quite long. This is why **all the results of our executions are stored in the following txt files** :
 
 ```sh
 R50_test_output.txt
