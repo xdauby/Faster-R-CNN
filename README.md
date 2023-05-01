@@ -81,6 +81,7 @@ Setting up all this stuff is quite long. This is why **all the results of our ex
 R50_test_output.txt
 R101_test_output.txt
 FPN_test_output.txt
+R50_proof_of_train.txt
 ```
 
 ### How to run 
