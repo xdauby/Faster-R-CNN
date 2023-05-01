@@ -89,7 +89,7 @@ R50_proof_of_train.txt
 To start inferences on the validation set, enter the command :
 
 ```sh
-python3 main_train_coco.py -m [backbone option]
+python3 main_test_coco.py -m [backbone option]
 ```
 where [backbone option] can be R50, R101, FPN.
 
