@@ -25,9 +25,10 @@ The cloned repository tree is :
 └── model.py
 ```
 
-Then, install detectron2 using the command (You must be in the root of the cloned folder) : 
+Then, install requirements and detectron2 using the command (You must be in the root of the cloned folder) : 
 
 ```sh
+pip install -r requirements.txt
 git clone https://github.com/facebookresearch/detectron2.git
 python3 -m pip install -e detectron2
 ```
